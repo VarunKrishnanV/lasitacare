@@ -99,7 +99,9 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 2fr 30px;
       grid-template-rows: 1fr 2fr 30px;
-      grid-template-areas: "logo contact nav" "address1 address2 nav" "copy copy copy";
+      grid-template-areas: "logo contact nav"
+ "address1 address2 nav"
+ "copy copy copy";
   grid-gap: 3em;
   color: white;
 }
@@ -239,6 +241,16 @@ footer .copyright {
   footer .copyright {
     border: none;
     padding-bottom: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 740px) {
+  nav .nav__item {
+    display: none;
+  }
+  .about .about__heading h1 {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */
